@@ -2,6 +2,7 @@
 import qrcode
 
 website_link = 'https://www.geekcandy.co.uk'
+website_link = input("What website would you like to turn into a QR code?")
 
 qr = qrcode.QRCode(version = 5, box_size = 5, border = 0)
 qr.add_data(website_link)
